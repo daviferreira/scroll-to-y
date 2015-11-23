@@ -1,0 +1,25 @@
+{
+  "name": "scroll-to-y",
+  "version": "0.0.1",
+  "description": "Small library to animate scroll to elements on a page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviferreira/scroll-to-y.git"
+  },
+  "keywords": [
+    "scroll",
+    "animated",
+    "scroll-to",
+    "anchor"
+  ],
+  "author": "Davi Ferreira <hi@daviferreira.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daviferreira/scroll-to-y/issues"
+  },
+  "homepage": "https://github.com/daviferreira/scroll-to-y#readme"
+}
