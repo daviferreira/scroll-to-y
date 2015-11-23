@@ -8,7 +8,7 @@
       return factory;
     });
   } else {
-    root.MediumEditor = factory;
+    root.scrollToY = factory;
   }
 }(this, function () {
 
