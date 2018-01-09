@@ -16,11 +16,11 @@
 
   // first add raf shim
   // http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
-  window.requestAnimFrame = (() => {
+  window.requestAnimFrame = (function(){
     return window.requestAnimationFrame     ||
       window.webkitRequestAnimationFrame ||
       window.mozRequestAnimationFrame  ||
-      function(callback) {
+      function( callback ) {
         window.setTimeout(callback, 1000 / 60);
       };
   })();
@@ -44,13 +44,13 @@
     // easing equations from https://github.com/danro/easing-js/blob/master/easing.js
     var PI_D2 = Math.PI / 2,
       easingEquations = {
-        easeOutSine(pos) {
+        easeOutSine: function(pos) {
           return Math.sin(pos * (Math.PI / 2));
         },
-        easeInOutSine(pos) {
+        easeInOutSine: function(pos) {
           return (-0.5 * (Math.cos(Math.PI * pos) - 1));
         },
-        easeInOutQuint(pos) {
+        easeInOutQuint: function(pos) {
           if ((pos /= 0.5) < 1) {
             return 0.5 * Math.pow(pos, 5);
           }
